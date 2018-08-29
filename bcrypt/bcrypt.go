@@ -1,11 +1,12 @@
+package bcrypt
+
+// import "golang.org/x/crypto/bcrypt"
 // Copyright 2011 The Go Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 // Package bcrypt implements Provos and Mazières's bcrypt adaptive hashing
 // algorithm. See http://www.usenix.org/event/usenix99/provos/provos.pdf
-package bcrypt // import "golang.org/x/crypto/bcrypt"
-
 // The code is a port of Provos and Mazières's C implementation.
 import (
 	"crypto/rand"
@@ -15,7 +16,7 @@ import (
 	"io"
 	"strconv"
 
-	"golang.org/x/crypto/blowfish"
+	"github.com/zhuxiujia/crypto/blowfish"
 )
 
 const (
